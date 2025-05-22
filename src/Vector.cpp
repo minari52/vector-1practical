@@ -447,7 +447,7 @@ long long Vector::find(const ValueType& value) const{ // поиск первог
 };
 
 
-void Vector::reserve(size_t capacity){ // Если capacity > _capacity, то выделить новый участок памяти размером capacity и перенести вектор туда, иначе - ничего
+void Vector::reserve(size_t capacity){ // если capacity > _capacity, то выделить новый участок памяти размером capacity и перенести вектор туда, иначе - ничего
     if (capacity > _capacity){
         ValueType* new_data = new ValueType[capacity];
         for (size_t i = 0; i < _size; ++i){
